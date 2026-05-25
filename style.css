@@ -17,22 +17,16 @@ body{
 }
 
 .container{
-    width: 850px;
+    max-width: 95%;
+    width: 900px;
     background: #fff;
     display: flex;
-    gap: 70px;
-    align-items: flex-end;
-    padding: 60px 40px;
-    border-radius: 10px;
-    /* display: flex;
-    justify-content: center;
+    gap: 30px;
     align-items: center;
-    width: 85%;
-    height: 80vh;
-    background: #fff;
-    border: 1px solid gray;
-    border-radius: 20px;
-    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.08); */
+    padding: 40px 20px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container .hangman-box img{
@@ -50,17 +44,18 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    flex-wrap: wrap;
+    gap: 8px;
     list-style: none;
 }
 
 .word-display .letters{
-    width: 28px;
-    font-size: 2rem;
+    width: 25px;
+    font-size: 1.5rem;
     font-weight: 600;
     text-align: center;
     text-transform: uppercase;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-bottom: 3px solid #000;
 }
 
@@ -200,15 +195,17 @@ body{
 
 /* Responsive */
 @media (max-width: 782px) {
-    .container{
+    .container {
         flex-direction: column;
-        padding: 30px 15px;
-        align-items: center;
+        padding: 20px;
     }
-    .hangman-box img{
-        max-width: 200px;
+
+    .container .hangman-box img {
+        max-width: 180px;
     }
-    .hangman-box h1{
-        display: none;
+
+    .game-box .keyboard button {
+        width: calc(100% / 7 - 5px);
+        font-size: 0.9rem;
     }
 }
