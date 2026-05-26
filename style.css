@@ -279,12 +279,8 @@ body{
         gap: 15px;
     }
 
-    .intro_content h1{
-        font-size: 1.5rem;
-    }
-
     .container .hangman-box img {
-        max-width: 200px !important;
+        max-width: 180px !important;
     }
 
     .game-box .keyboard button {
