@@ -1,262 +1,202 @@
 const wordList = [
-    {
-        word: "guitar",
-        hint: "A musical instrument with strings."
-    },
-    {
-        word: "oxygen",
-        hint: "A colorless, odorless gas essential for life."
-    },
-    {
-        word: "mountain",
-        hint: "A large natural elevation of the Earth's surface."
-    },
-    {
-        word: "painting",
-        hint: "An art form using colors on a surface to create images or expression."
-    },
-    {
-        word: "astronomy",
-        hint: "The scientific study of celestial objects and phenomena."
-    },
-    {
-        word: "football",
-        hint: "A popular sport played with a spherical ball."
-    },
-    {
-        word: "chocolate",
-        hint: "A sweet treat made from cocoa beans."
-    },
-    {
-        word: "butterfly",
-        hint: "An insect with colorful wings and a slender body."
-    },
-    {
-        word: "history",
-        hint: "The study of past events and human civilization."
-    },
-    {
-        word: "pizza",
-        hint: "A savory dish consisting of a round, flattened base with toppings."
-    },
-    {
-        word: "jazz",
-        hint: "A genre of music characterized by improvisation and syncopation."
-    },
-    {
-        word: "camera",
-        hint: "A device used to capture and record images or videos."
-    },
-    {
-        word: "diamond",
-        hint: "A precious gemstone known for its brilliance and hardness."
-    },
-    {
-        word: "adventure",
-        hint: "An exciting or daring experience."
-    },
-    {
-        word: "science",
-        hint: "The systematic study of the structure and behavior of the physical and natural world."
-    },
-    {
-        word: "bicycle",
-        hint: "A human-powered vehicle with two wheels."
-    },
-    {
-        word: "sunset",
-        hint: "The daily disappearance of the sun below the horizon."
-    },
-    {
-        word: "coffee",
-        hint: "A popular caffeinated beverage made from roasted coffee beans."
-    },
-    {
-        word: "dance",
-        hint: "A rhythmic movement of the body often performed to music."
-    },
-    {
-        word: "galaxy",
-        hint: "A vast system of stars, gas, and dust held together by gravity."
-    },
-    {
-        word: "orchestra",
-        hint: "A large ensemble of musicians playing various instruments."
-    },
-    {
-        word: "volcano",
-        hint: "A mountain or hill with a vent through which lava, rock fragments, hot vapor, and gas are ejected."
-    },
-    {
-        word: "novel",
-        hint: "A long work of fiction, typically with a complex plot and characters."
-    },
-    {
-        word: "sculpture",
-        hint: "A three-dimensional art form created by shaping or combining materials."
-    },
-    {
-        word: "symphony",
-        hint: "A long musical composition for a full orchestra, typically in multiple movements."
-    },
-    {
-        word: "architecture",
-        hint: "The art and science of designing and constructing buildings."
-    },
-    {
-        word: "ballet",
-        hint: "A classical dance form characterized by precise and graceful movements."
-    },
-    {
-        word: "astronaut",
-        hint: "A person trained to travel and work in space."
-    },
-    {
-        word: "waterfall",
-        hint: "A cascade of water falling from a height."
-    },
-    {
-        word: "technology",
-        hint: "The application of scientific knowledge for practical purposes."
-    },
-    {
-        word: "rainbow",
-        hint: "A meteorological phenomenon that is caused by reflection, refraction, and dispersion of light."
-    },
-    {
-        word: "universe",
-        hint: "All existing matter, space, and time as a whole."
-    },
-    {
-        word: "piano",
-        hint: "A musical instrument played by pressing keys that cause hammers to strike strings."
-    },
-    {
-        word: "vacation",
-        hint: "A period of time devoted to pleasure, rest, or relaxation."
-    },
-    {
-        word: "rainforest",
-        hint: "A dense forest characterized by high rainfall and biodiversity."
-    },
-    {
-        word: "theater",
-        hint: "A building or outdoor area in which plays, movies, or other performances are staged."
-    },
-    {
-        word: "telephone",
-        hint: "A device used to transmit sound over long distances."
-    },
-    {
-        word: "language",
-        hint: "A system of communication consisting of words, gestures, and syntax."
-    },
-    {
-        word: "desert",
-        hint: "A barren or arid land with little or no precipitation."
-    },
-    {
-        word: "sunflower",
-        hint: "A tall plant with a large yellow flower head."
-    },
-    {
-        word: "fantasy",
-        hint: "A genre of imaginative fiction involving magic and supernatural elements."
-    },
-    {
-        word: "telescope",
-        hint: "An optical instrument used to view distant objects in space."
-    },
-    {
-        word: "breeze",
-        hint: "A gentle wind."
-    },
-    {
-        word: "oasis",
-        hint: "A fertile spot in a desert where water is found."
-    },
-    {
-        word: "photography",
-        hint: "The art, process, or practice of creating images by recording light or other electromagnetic radiation."
-    },
-    {
-        word: "safari",
-        hint: "An expedition or journey, typically to observe wildlife in their natural habitat."
-    },
-    {
-        word: "planet",
-        hint: "A celestial body that orbits a star and does not produce light of its own."
-    },
-    {
-        word: "river",
-        hint: "A large natural stream of water flowing in a channel to the sea, a lake, or another such stream."
-    },
-    {
-        word: "tropical",
-        hint: "Relating to or situated in the region between the Tropic of Cancer and the Tropic of Capricorn."
-    },
-    {
-        word: "mysterious",
-        hint: "Difficult or impossible to understand, explain, or identify."
-    },
-    {
-        word: "enigma",
-        hint: "Something that is mysterious, puzzling, or difficult to understand."
-    },
-    {
-        word: "paradox",
-        hint: "A statement or situation that contradicts itself or defies intuition."
-    },
-    {
-        word: "puzzle",
-        hint: "A game, toy, or problem designed to test ingenuity or knowledge."
-    },
-    {
-        word: "whisper",
-        hint: "To speak very softly or quietly, often in a secretive manner."
-    },
-    {
-        word: "shadow",
-        hint: "A dark area or shape produced by an object blocking the light."
-    },
-    {
-        word: "secret",
-        hint: "Something kept hidden or unknown to others."
-    },
-    {
-        word: "curiosity",
-        hint: "A strong desire to know or learn something."
-    },
-    {
-        word: "unpredictable",
-        hint: "Not able to be foreseen or known beforehand; uncertain."
-    },
-    {
-        word: "obfuscate",
-        hint: "To confuse or bewilder someone; to make something unclear or difficult to understand."
-    },
-    {
-        word: "unveil",
-        hint: "To make known or reveal something previously secret or unknown."
-    },
-    {
-        word: "illusion",
-        hint: "A false perception or belief; a deceptive appearance or impression."
-    },
-    {
-        word: "moonlight",
-        hint: "The light from the moon."
-    },
-    {
-        word: "vibrant",
-        hint: "Full of energy, brightness, and life."
-    },
-    {
-        word: "nostalgia",
-        hint: "A sentimental longing or wistful affection for the past."
-    },
-    {
-        word: "brilliant",
-        hint: "Exceptionally clever, talented, or impressive."
-    },
+    { word: "cat", hint: "A small domesticated carnivorous mammal." },
+    { word: "dog", hint: "A domesticated carnivorous mammal known as a pet." },
+    { word: "sky", hint: "The region of the atmosphere seen from the earth." },
+    { word: "sun", hint: "The star around which the earth orbits." },
+    { word: "book", hint: "A set of written or printed pages." },
+    { word: "moon", hint: "The natural satellite of the earth." },
+    { word: "star", hint: "A fixed luminous point in the night sky." },
+    { word: "tree", hint: "A woody perennial plant." },
+    { word: "bird", hint: "A feathered vertebrate animal." },
+    { word: "fish", hint: "A limbless cold-blooded vertebrate animal with gills." },
+    { word: "guitar", hint: "A musical instrument with strings." },
+    { word: "oxygen", hint: "A colorless gas essential for life." },
+    { word: "mountain", hint: "A large natural elevation of the earth." },
+    { word: "painting", hint: "An art form using colors on a surface." },
+    { word: "astronomy", hint: "The study of celestial objects." },
+    { word: "football", hint: "A popular sport played with a ball." },
+    { word: "chocolate", hint: "A sweet treat made from cocoa." },
+    { word: "butterfly", hint: "An insect with colorful wings." },
+    { word: "history", hint: "The study of past events." },
+    { word: "pizza", hint: "A dish with a base and toppings." },
+    { word: "jazz", hint: "A genre of music with improvisation." },
+    { word: "camera", hint: "A device to capture images." },
+    { word: "diamond", hint: "A precious hard gemstone." },
+    { word: "adventure", hint: "An exciting or daring experience." },
+    { word: "science", hint: "Systematic study of the physical world." },
+    { word: "bicycle", hint: "A two-wheeled human-powered vehicle." },
+    { word: "sunset", hint: "Disappearance of the sun below the horizon." },
+    { word: "coffee", hint: "A popular caffeinated beverage." },
+    { word: "dance", hint: "Rhythmic movement of the body." },
+    { word: "galaxy", hint: "A vast system of stars and gas." },
+    { word: "orchestra", hint: "A large ensemble of musicians." },
+    { word: "volcano", hint: "A mountain that ejects lava." },
+    { word: "novel", hint: "A long work of fiction." },
+    { word: "sculpture", hint: "A three-dimensional art form." },
+    { word: "symphony", hint: "A long musical composition." },
+    { word: "architecture", hint: "The art of designing buildings." },
+    { word: "ballet", hint: "A classical dance form." },
+    { word: "astronaut", hint: "A person trained to travel in space." },
+    { word: "waterfall", hint: "Water falling from a height." },
+    { word: "technology", hint: "Application of scientific knowledge." },
+    { word: "rainbow", hint: "Optical phenomenon in the sky." },
+    { word: "universe", hint: "All existing matter and space." },
+    { word: "piano", hint: "A musical instrument with keys." },
+    { word: "vacation", hint: "Time devoted to rest or relaxation." },
+    { word: "rainforest", hint: "A dense forest with high rainfall." },
+    { word: "theater", hint: "Place where plays are staged." },
+    { word: "telephone", hint: "Device to transmit sound." },
+    { word: "language", hint: "System of communication." },
+    { word: "desert", hint: "A barren land with little rain." },
+    { word: "sunflower", hint: "A tall plant with a yellow flower." },
+    { word: "fantasy", hint: "A genre of imaginative fiction." },
+    { word: "telescope", hint: "Instrument to view distant objects." },
+    { word: "breeze", hint: "A gentle wind." },
+    { word: "oasis", hint: "A fertile spot in a desert." },
+    { word: "photography", hint: "The art of creating images by light." },
+    { word: "safari", hint: "A journey to observe wildlife." },
+    { word: "planet", hint: "A body that orbits a star." },
+    { word: "river", hint: "A large natural stream of water." },
+    { word: "tropical", hint: "Relating to the hot regions." },
+    { word: "mysterious", hint: "Difficult to understand." },
+    { word: "enigma", hint: "Something puzzling." },
+    { word: "paradox", hint: "A self-contradictory statement." },
+    { word: "puzzle", hint: "A game to test ingenuity." },
+    { word: "whisper", hint: "To speak very softly." },
+    { word: "shadow", hint: "A dark shape from blocking light." },
+    { word: "secret", hint: "Something kept hidden." },
+    { word: "curiosity", hint: "A desire to know." },
+    { word: "unpredictable", hint: "Not able to be foreseen." },
+    { word: "obfuscate", hint: "To make something unclear." },
+    { word: "unveil", hint: "To reveal something secret." },
+    { word: "illusion", hint: "A false perception." },
+    { word: "moonlight", hint: "The light from the moon." },
+    { word: "vibrant", hint: "Full of energy." },
+    { word: "nostalgia", hint: "Longing for the past." },
+    { word: "brilliant", hint: "Exceptionally clever." },
+    { word: "abyss", hint: "A deep chasm." },
+    { word: "canyon", hint: "A deep gorge." },
+    { word: "dazzle", hint: "To impress deeply." },
+    { word: "echo", hint: "Sound reflection." },
+    { word: "fable", hint: "A story with a moral." },
+    { word: "glimmer", hint: "A faint light." },
+    { word: "harvest", hint: "Gathering of crops." },
+    { word: "island", hint: "Land surrounded by water." },
+    { word: "jungle", hint: "Dense wild forest." },
+    { word: "knight", hint: "A medieval soldier." },
+    { word: "labyrinth", hint: "A maze." },
+    { word: "melody", hint: "A musical tune." },
+    { word: "nebula", hint: "A cloud in space." },
+    { word: "quartz", hint: "A hard mineral." },
+    { word: "rhythm", hint: "Pattern of sound." },
+    { word: "solitude", hint: "Being alone." },
+    { word: "twilight", hint: "Dusk time." },
+    { word: "zenith", hint: "Highest point." },
+    { word: "courage", hint: "Strength in the face of pain." },
+    { word: "harmony", hint: "Pleasing arrangement." },
+    { word: "pioneer", hint: "The first to explore." },
+    { word: "serene", hint: "Calm and peaceful." },
+    { word: "infinite", hint: "Without limits." },
+    { word: "legacy", hint: "Something left behind." },
+    { word: "wonder", hint: "A feeling of admiration." },
+    { word: "apple", hint: "A round fruit with red or green skin." },
+    { word: "beach", hint: "A sandy shore by the sea." },
+    { word: "cake", hint: "A sweet baked dessert." },
+    { word: "door", hint: "A movable barrier to a room or building." },
+    { word: "eagle", hint: "A large bird of prey." },
+    { word: "fire", hint: "Chemical process that produces light and heat." },
+    { word: "gold", hint: "A precious yellow metallic element." },
+    { word: "hat", hint: "A head covering worn for protection or style." },
+    { word: "ice", hint: "Frozen water." },
+    { word: "jump", hint: "To push oneself off a surface." },
+    { word: "kite", hint: "A toy flown in the wind on a string." },
+    { word: "lamp", hint: "A device for giving light." },
+    { word: "moon", hint: "The natural satellite of the earth." },
+    { word: "nest", hint: "A structure built by a bird for its eggs." },
+    { word: "ocean", hint: "A very large expanse of sea." },
+    { word: "pen", hint: "A tool for writing with ink." },
+    { word: "queen", hint: "A female ruler of a kingdom." },
+    { word: "rain", hint: "Water falling in drops from clouds." },
+    { word: "star", hint: "A luminous point in the night sky." },
+    { word: "tree", hint: "A tall woody perennial plant." },
+    { word: "umbrella", hint: "A device for protection against rain." },
+    { word: "vase", hint: "A container used for holding flowers." },
+    { word: "watch", hint: "A small timepiece worn on the wrist." },
+    { word: "xray", hint: "Used to see inside the body." },
+    { word: "yacht", hint: "A medium-sized sailing boat." },
+    { word: "zebra", hint: "An African animal with black and white stripes." },
+    { word: "guitar", hint: "A musical instrument with strings." },
+    { word: "oxygen", hint: "A gas essential for human life." },
+    { word: "mountain", hint: "A very high natural elevation." },
+    { word: "painting", hint: "Art created by applying color to a surface." },
+    { word: "astronomy", hint: "Study of stars and planets." },
+    { word: "football", hint: "A sport played with a ball." },
+    { word: "chocolate", hint: "A sweet treat made from cocoa." },
+    { word: "butterfly", hint: "Insect with colorful wings." },
+    { word: "history", hint: "The study of past events." },
+    { word: "pizza", hint: "A popular Italian dish with toppings." },
+    { word: "jazz", hint: "A style of music with improvisation." },
+    { word: "camera", hint: "A device for taking photographs." },
+    { word: "diamond", hint: "A hard, brilliant precious stone." },
+    { word: "adventure", hint: "An exciting or unusual experience." },
+    { word: "science", hint: "Knowledge about the physical world." },
+    { word: "bicycle", hint: "A vehicle with two wheels." },
+    { word: "sunset", hint: "The end of the day." },
+    { word: "coffee", hint: "A drink made from roasted beans." },
+    { word: "dance", hint: "Moving to rhythm or music." },
+    { word: "galaxy", hint: "A huge group of stars." },
+    { word: "orchestra", hint: "A group of musicians playing together." },
+    { word: "volcano", hint: "A mountain that erupts with lava." },
+    { word: "novel", hint: "A long written story." },
+    { word: "sculpture", hint: "Art created by shaping stone or clay." },
+    { word: "symphony", hint: "A complex musical composition." },
+    { word: "architecture", hint: "The art of designing buildings." },
+    { word: "ballet", hint: "A graceful classical dance." },
+    { word: "astronaut", hint: "Someone who travels in space." },
+    { word: "waterfall", hint: "Water flowing over a cliff." },
+    { word: "technology", hint: "Modern scientific tools." },
+    { word: "rainbow", hint: "Colors seen after rain and sun." },
+    { word: "universe", hint: "Everything that exists." },
+    { word: "piano", hint: "A large instrument with keys." },
+    { word: "vacation", hint: "A period of rest and travel." },
+    { word: "rainforest", hint: "A thick, tropical forest." },
+    { word: "theater", hint: "Where plays and movies are shown." },
+    { word: "telephone", hint: "Used to talk over long distances." },
+    { word: "language", hint: "A system of communication." },
+    { word: "desert", hint: "A hot and dry region." },
+    { word: "sunflower", hint: "A yellow flower that turns to the sun." },
+    { word: "fantasy", hint: "Stories about magic." },
+    { word: "telescope", hint: "A tool to see stars closer." },
+    { word: "breeze", hint: "A gentle, soft wind." },
+    { word: "oasis", hint: "A water source in the desert." },
+    { word: "photography", hint: "Taking pictures as art." },
+    { word: "safari", hint: "Watching animals in the wild." },
+    { word: "planet", hint: "An object that orbits a star." },
+    { word: "river", hint: "Flowing natural water." },
+    { word: "tropical", hint: "Relating to hot, humid climates." },
+    { word: "mysterious", hint: "Hard to explain or understand." },
+    { word: "enigma", hint: "A puzzle or mystery." },
+    { word: "paradox", hint: "A confusing contradiction." },
+    { word: "puzzle", hint: "A game for the mind." },
+    { word: "whisper", hint: "Speaking very quietly." },
+    { word: "shadow", hint: "A dark shape caused by light blocking." },
+    { word: "secret", hint: "Information kept hidden." },
+    { word: "curiosity", hint: "A desire to learn." },
+    { word: "unpredictable", hint: "Cannot be guessed." },
+    { word: "obfuscate", hint: "To make something confusing." },
+    { word: "unveil", hint: "To show something for the first time." },
+    { word: "illusion", hint: "A trick on the eyes." },
+    { word: "moonlight", hint: "Light coming from the moon." },
+    { word: "vibrant", hint: "Very bright and full of life." },
+    { word: "nostalgia", hint: "Thinking of good memories from the past." },
+    { word: "brilliant", hint: "Extremely intelligent." },
+    { word: "abyss", hint: "A very deep hole." },
+    { word: "canyon", hint: "A deep valley." },
+    { word: "dazzle", hint: "To blind or impress with light." },
+    { word: "echo", hint: "Repeating sound." },
+    { word: "fable", hint: "A story that teaches a lesson." },
+    { word: "glimmer", hint: "A small, shining light." },
+    { word: "harvest", hint: "Gathering farm crops." },
+    { word: "island", hint: "Land surrounded by water." },
+    { word: "jungle", hint: "Dense, wild forest." }
 ];

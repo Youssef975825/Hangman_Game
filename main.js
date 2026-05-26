@@ -1,3 +1,6 @@
+const intro_Game = document.querySelector(".intro_game");
+const start_Game = document.querySelector(".play_game");
+const container_Game = document.querySelector(".container");
 const hangmanImage = document.querySelector(".hangman-box img");
 const correctWord = document.querySelector(".content b");
 const wordDisplay = document.querySelector(".word-display");
@@ -7,6 +10,12 @@ const game_modal = document.querySelector(".game-modal");
 const play_Again = document.querySelector(".play-again");
 let currentWord, correctLetters = [], wrongGuessCount = 0;
 const maxGuess = 6;
+
+start_Game.addEventListener("click", ()=>{
+    intro_Game.classList.add("hidden");
+    container_Game.classList.add("show");
+    getRandomWord();
+})
 
 // 5) After User Clicks on Button (Play Again), Calling This Function
 const resetGame = () => {
@@ -27,6 +36,9 @@ const getRandomWord = () => {
     console.log(word);
     currentWord = word;
     document.querySelector(".hint-text b").innerHTML = hint;
+    if(currentWord.length>3&& currentWord.length<=5){document.querySelector(".level b").innerHTML = `Easy`;}
+    else if(currentWord.length>5 && currentWord.length<=9){document.querySelector(".level b").innerHTML = `Medium`;}
+    else if(currentWord.length>=10){document.querySelector(".level b").innerHTML = `Hard`;}
     resetGame();
 }
 
@@ -79,5 +91,5 @@ for(let i=97; i<=122; i++){
     button.addEventListener("click", e=> initGame(e.target, String.fromCharCode(i)));
 }
 
-getRandomWord();
+// getRandomWord();
 play_Again.addEventListener("click", getRandomWord);

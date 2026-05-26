@@ -17,16 +17,24 @@ body{
 }
 
 .container{
-    max-width: 95%;
-    width: 900px;
+    position: relative;
+    max-width: 900px;
+    width: 95%;
+    margin: 0 auto;
     background: #fff;
-    display: flex;
+    display: none;
     gap: 30px;
     align-items: center;
     padding: 40px 20px;
     border-radius: 10px;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.container .level{
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
 .container .hangman-box img{
@@ -189,6 +197,72 @@ body{
 }
 
 .game-modal .content .play-again:hover::before{
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+/* Intro Game */
+.intro_game{
+    position: absolute;
+    text-align: center;
+    border: none;
+    border-radius: 25px;
+    background: #fff;
+    padding: 40px 20px;
+    opacity: 1;
+    transition: opacity 0.3s ease;
+}
+
+.intro_game.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.container.show {
+    display: flex;
+}
+
+.intro_game .intro_content{
+    line-height: 45px;
+}
+
+.intro_game .intro_content h1{
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.intro_game .intro_content p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.intro_game .intro_content .play_game{
+    position: relative;
+    font-size: 1.5rem;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #5E63BA;
+    color: #fff;
+    z-index: 10;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.intro_game .intro_content .play_game::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background: #8286c9;
+    z-index: -10;
+    transition: 0.5 ease;
+}
+
+.intro_game .intro_content .play_game:hover::before{
     transition: 0.5s ease;
     width: 100%;
 }
